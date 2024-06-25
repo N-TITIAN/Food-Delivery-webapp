@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval';"> -->
+<!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval';"> -->
+
     <title>Food-Delivery</title>
     <link rel="stylesheet" href="assets/styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -173,6 +176,7 @@
     <section class="popular">
         <h1>Popular Items </h1>
         <div class="popular-items">
+            <i class="fa fa-chevron-circle-left" style="font-size:32px;color:#FFB20E"></i>
         <div class="popular-item">
             <img src="assets/images/5.png" alt="">
             <div class="item-des">
@@ -243,12 +247,13 @@
                 <p> Order Now</p>
             </button>
         </div>
+        <i class="fa fa-chevron-circle-right" style="font-size:32px;color:#FFB20E"></i>
         </div>
     </section>
     <section class="resturants">
        <h1> Featured Resturants </h1>
-       <div class="resturant-cards">
-        <div class="resturant-card">
+       <div class="resturant-cards" >
+        <!-- <div class="resturant-card">
             <div class="resturant-card-top">
                 <img src="assets/images/10.png" alt="">
                 <div class="badge">
@@ -278,9 +283,247 @@
             <div class="resturant-tag-inactive">
                <p> Opens Tomorrow</p>
             </div>
+        </div> -->
+        <div class="resturant-card" id="resturant-card">
+         <div class="fast">
+                      
+                        <p>View All</p>
+                         <i class="fa fa-chevron-down"></i>
+         </div>
         </div>
        </div>
     </section>
+    <section class="search-by-food">
+        <div class="search-top">
+            <h1>Search by Food</h1>
+            <div class="search-top-left">
+                <div class="view-all">
+                    <p>View All</p>
+                </div>
+                <div class="search-icons">
+                     <i class="fa fa-chevron-circle-left" style="font-size:32px;color:#FFB20E"></i>
+                     <i class="fa fa-chevron-circle-right" style="font-size:32px;color:#FFB20E"></i>
+                     
+                </div>
+            </div>
+        </div>
+        <div class="search-bottom">
+            <div class="search-item">
+                <img src="assets/images/18.png" alt="">
+                <p>Pizza</p>
+            </div>
+             <div class="search-item">
+                <img src="assets/images/19.png" alt="">
+                <p>Burger</p>
+            </div>
+             <div class="search-item">
+                <img src="assets/images/20.png" alt="">
+                <p>Noodles</p>
+            </div>
+             <div class="search-item">
+                <img src="assets/images/21.png" alt="">
+                <p>Sub-sandiwhch</p>
+            </div>
+             <div class="search-item">
+                <img src="assets/images/22.png" alt="">
+                <p>Chowmein</p>
+            </div>
+             <div class="search-item">
+                <img src="assets/images/23.png" alt="">
+                <p>Steak</p>
+            </div>
+        </div>
+    </section>
+    <section class="getting-app">
+        
+       
+         <div class="getting-app-background1">
+             <div class="getting-app-background"></div>
+         </div>
+        <div class="getting-app-top">
+            <div class="app-features side-feature">
+                <img src="assets/images/Icon.png" alt="">
+                <p>Daily Discount</p>
+            </div>
+             <div class="app-features side-feature" >
+                <img src="assets/images/Icon-1.png" alt="">
+                <p>Live Tracking</p>
+            </div>
+             <div class="app-features ">
+                <img src="assets/images/Icon-2.png" alt="">
+                <p>Quick Delivery</p>
+            </div>
+        </div>
+        <div class="getting-app-bottom">
+            <div class="app-images">
+                <img src="assets/images/app.png" alt="">
+            </div>
+            <div class="app-des">
+                <div class="app-des-text">
+                    <h1>Install the app</h1>
+                    <p>It's never been easier to order food. Look for the finest discounts and you'll be lost in a world of delectable food.</p>
+                </div>
+                <div class="download-bots">
+                    <img src="assets/images/Google Play Download.png" alt="">
+                    <img src="assets/images/App Store Download Button.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="best-deals">
+        <div class="best-dealcards">
+            <div class="best-dealcard">
+                <div class="deal-des">
+                    <div class="deal-text">
+                        <h1> Best Deal <span>Crispy Chicken</span></h1>
+                        <p>Enjoy the large size of sandwiches. Complete perfect slice of sandwiches.</p>
+                    </div>
+                    <button class=" deal-button">
+                        <p>Proceed to Order</p>
+                         <i class="fa fa-chevron-right"></i>
+                    </button>
+                </div>
+                 <img src="assets/images/24.png" alt="">
+            </div>
+            <div class="best-dealcard">
+                <img src="assets/images/25.png" alt="">
+                <div class="deal-des">
+                    <div class="deal-text">
+                        <h1> Best Deal <span>Crispy Chicken</span></h1>
+                        <p>Enjoy the large size of sandwiches. Complete perfect slice of sandwiches.</p>
+                    </div>
+                    <button class=" deal-button">
+                        <p>Proceed to Order</p>
+                         <i class="fa fa-chevron-right"></i>
+                    </button>
+                </div>
+                 
+            </div>
+            <div class="best-dealcard">
+                <div class="deal-des">
+                    <div class="deal-text">
+                        <h1> Best Deal <span>Crispy Chicken</span></h1>
+                        <p>Enjoy the large size of sandwiches. Complete perfect slice of sandwiches.</p>
+                    </div>
+                    <button class=" deal-button">
+                        <p>Proceed to Order</p>
+                         <i class="fa fa-chevron-right"></i>
+                    </button>
+                </div>
+                 <img src="assets/images/26.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="ready-to-order">
+        <h1> Are you ready to order 
+            <br>with the best deals?</h1>
+        <button class="primary-button">
+            <p>Proceed to Order</p>
+            <i class="fa fa-chevron-right"></i>
+        </button>
+    </section>
+    <footer>
+        <section class="top-cities">
+            <h2>Our top citites </h2>
+            <div class="city-items">
+                <ul class="menu-items">
+                    <li>Sans Franscisco</li>
+                    <li>Miami</li>
+                    <li>San Diego</li>
+                    <li>East Bay</li>
+                    <li>Long Beach</li>
+                </ul>
+                <ul class="menu-items">
+                    <li>Sans Franscisco</li>
+                    <li>Miami</li>
+                    <li>San Diego</li>
+                    <li>East Bay</li>
+                    <li>Long Beach</li>
+                </ul>
+                <ul class="menu-items">
+                    <li>Sans Franscisco</li>
+                    <li>Miami</li>
+                    <li>San Diego</li>
+                    <li>East Bay</li>
+                    <li>Long Beach</li>
+                </ul>
+                <ul class="menu-items">
+                    <li>Sans Franscisco</li>
+                    <li>Miami</li>
+                    <li>San Diego</li>
+                    <li>East Bay</li>
+                    <li>Long Beach</li>
+                </ul>
+                <ul class="menu-items">
+                    <li>Sans Franscisco</li>
+                    <li>Miami</li>
+                    <li>San Diego</li>
+                    <li>East Bay</li>
+                    <li>Long Beach</li>
+                </ul>
+            </div>
+            
+
+        </section>
+        <hr>
+        <section class="menu-subscription-rights">
+            <div class="menu-subscribe">
+                <div class="menu">
+                    <div class="footer-items">
+                        <h3>Company</h3>
+                        <ul class="menu-items">
+                            <li>About Us</li>
+                            <li>Team</li>
+                            <li>Careers</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                    <div class="footer-items">
+                        <h3>Contact</h3>
+                        <ul class="menu-items">
+                            <li>About Us</li>
+                            <li>Team</li>
+                            <li>Careers</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                    <div class="footer-items">
+                        <h3>Legal</h3>
+                        <ul class="menu-items">
+                            <li>About Us</li>
+                            <li>Team</li>
+                            <li>Careers</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="subscribe">
+                    <h3>Follow Us</h3>
+                    <div class="follow-icons">
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-facebook-f"></i>
+                        <i class="fa fa-twitter"></i>
+
+                    </div>
+                    <p>Receive exclusive offers in your mailbox</p>
+                    <div class="text-subscribe-button">
+                        <div class="input-text">
+                               <i class="fa fa-envelope"></i>
+                            <input type="text" placeholder="Enter your email address">
+                         
+                        </div>
+                        <button class="subscribe-button"> Subcribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="rights">
+                
+                    <p>All rights Reserved <span>@</span> <span>Your Company, 2021</span></p>
+                    <p>Made with 💜 by <span>NDIFON TITIANA S</span></p>
+            </div>
+        </section>
+    </footer>
      <script src="https://kit.fontawesome.com/ee71997c80.js" crossorigin="anonymous"></script>
     <script src="assets/scripts/script.js"></script>
 </body>
