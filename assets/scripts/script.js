@@ -32,15 +32,17 @@ const resturants = [
     resLogo: 'src="assets/images/Image.png" alt="logo"',
   },
 ];
+
 resturants.forEach((resturant) => {
-  var div = document.getElementsByClassName("#resturant-card");
-//   alert(resturant.img);
+  const div = document.getElementsByClassName("resturant-cards")[0];
+  // console.log(div.innerHTML);
   div.innerHTML =
-    div.innerHTML +
+  
     `
     <div class="resturant-card">
             <div class="resturant-card-top">
-                ${resturant.img}
+              
+                 <img ${resturant.img} alt="">
                 <div class="badge">
                     <div class="discount">
                         <i class="fa fa-tag"></i>
@@ -56,7 +58,7 @@ resturants.forEach((resturant) => {
                 </div>
             </div>
             <div class="name-review">
-                ${resturant.resLogo}
+                <img ${resturant.resLogo} alt="logo">
                 <div class="name-rate">
                     <p>FoodWord</p>
                     <div>
@@ -69,5 +71,5 @@ resturants.forEach((resturant) => {
                <p> Opens Tomorrow</p>
             </div>
         </div>
-    `;
+    ` +   div.innerHTML ;
 });
